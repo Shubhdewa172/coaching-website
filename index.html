@@ -6,21 +6,17 @@
 <title>Excellence Coaching</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 
 <style>
-
 *{margin:0;padding:0;box-sizing:border-box;}
 body{font-family:'Poppins';background:#0f172a;color:white;}
 
 /* NAV */
 header{
 position:fixed;width:100%;top:0;
-display:flex;justify-content:space-between;
 padding:15px 40px;
 background:rgba(15,23,42,0.7);
 backdrop-filter:blur(10px);
-z-index:1000;
 }
 header h2{color:#60a5fa;}
 
@@ -30,21 +26,18 @@ height:100vh;
 display:flex;flex-direction:column;
 justify-content:center;align-items:center;
 text-align:center;
-color:white;
 background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
 url('https://images.unsplash.com/photo-1588072432836-e10032774350');
 background-size:cover;
-background-position:center;
+color:white;
 }
 
-.hero h1{font-size:48px;}
-.hero span{color:#60a5fa;}
-.hero p{margin:15px 0;color:#cbd5f5;}
-
 .btn{
-background:linear-gradient(135deg,#3b82f6,#60a5fa);
-padding:12px 25px;border-radius:30px;
-text-decoration:none;color:white;
+background:#3b82f6;
+padding:10px 20px;
+border-radius:20px;
+text-decoration:none;
+color:white;
 }
 
 /* SECTION */
@@ -59,42 +52,19 @@ justify-content:center;
 .card{
 width:260px;padding:20px;border-radius:15px;
 background:rgba(255,255,255,0.05);
-backdrop-filter:blur(15px);
-border:1px solid rgba(255,255,255,0.2);
 }
 
 /* CONTACT */
 .contact{background:#1e293b;}
-
-.contact-box{
-margin:20px auto;
-max-width:500px;
-background:rgba(255,255,255,0.05);
-padding:20px;
-border-radius:15px;
-}
-
-.contact-box i{
-color:#60a5fa;
-margin-right:10px;
-}
-
 input,textarea{
 width:90%;margin:10px;padding:10px;
 border-radius:10px;border:none;
 }
 
-.whatsapp{
-background:#25D366;padding:10px 20px;
-border-radius:10px;text-decoration:none;color:white;
-display:inline-block;margin-top:10px;
-}
-
 /* MAP */
-.map iframe{width:100%;height:320px;border:0;border-radius:10px;}
+.map iframe{width:100%;height:300px;border:0;}
 
 footer{background:#020617;padding:15px;}
-
 </style>
 </head>
 
@@ -106,7 +76,7 @@ footer{background:#020617;padding:15px;}
 
 <!-- HERO -->
 <section class="hero">
-<h1>Excellence Research <br><span>And Coaching Centre</span></h1>
+<h1>Excellence Research And Coaching Centre</h1>
 <p>Class 1–12 | CGPSC | SSC | Banking | Railway</p>
 <a href="#contact" class="btn">Join Now</a>
 </section>
@@ -115,10 +85,29 @@ footer{background:#020617;padding:15px;}
 <section>
 <h2>Our Courses</h2>
 <div class="cards">
-<div class="card"><h3>Class 1–12</h3><p>All Subjects</p></div>
-<div class="card"><h3>CGPSC</h3><p>Full Prep</p></div>
-<div class="card"><h3>SSC/Banking</h3><p>Complete Course</p></div>
-<div class="card"><h3>Railway</h3><p>RRB Exams</p></div>
+<div class="card"><h3>Class 1–12</h3></div>
+<div class="card"><h3>CGPSC</h3></div>
+<div class="card"><h3>SSC/Banking</h3></div>
+<div class="card"><h3>Railway</h3></div>
+</div>
+</section>
+
+<!-- TOPPER -->
+<section>
+<h2>Our Topper</h2>
+<div class="cards">
+
+<div class="card">
+<img src="vidya.jpg" 
+style="width:120px;height:120px;border-radius:50%;border:3px solid #60a5fa;">
+
+<h3>Vidya Bhardwaj</h3>
+<p>Class 12th Topper</p>
+
+<h2 style="color:#60a5fa;">90%</h2>
+<p>CBSE Board Result</p>
+</div>
+
 </div>
 </section>
 
@@ -126,27 +115,23 @@ footer{background:#020617;padding:15px;}
 <section class="contact" id="contact">
 <h2>Contact Us</h2>
 
-<div class="contact-box">
-<p><i class="fas fa-phone"></i> 
-<a href="tel:9755360286" style="color:white;">9755360286</a></p>
+<p>📞 <a href="tel:9755360286" style="color:white;">9755360286</a></p>
 
-<p><i class="fas fa-map-marker-alt"></i> 
-Behind Vinayak G Mart, HIG-II, House No-42,<br>
-Sec-29, Naya Raipur, Chhattisgarh - 492015</p>
-</div>
+<p>
+📍 Behind Vinayak G Mart, HIG-II, House No-42,<br>
+Sec-29, Naya Raipur, Chhattisgarh - 492015
+</p>
 
 <form onsubmit="sendWhatsApp(event)">
 <input type="text" id="name" placeholder="Your Name" required>
 <input type="text" id="phone" placeholder="Phone Number" required>
-<textarea id="msg" placeholder="Course Interested"></textarea>
-<button class="btn">Send Enquiry</button>
+<textarea id="msg" placeholder="Course"></textarea>
+<button class="btn">Send</button>
 </form>
 
-<a href="https://wa.me/919755360286" class="whatsapp">Chat on WhatsApp</a>
-
 <p>
-📍 <a href="https://maps.app.goo.gl/QrZvXis84WTvNySz5" target="_blank" style="color:#60a5fa;">
-View Exact Location
+<a href="https://maps.app.goo.gl/QrZvXis84WTvNySz5" target="_blank" style="color:#60a5fa;">
+View Location
 </a>
 </p>
 
@@ -169,7 +154,7 @@ let phone=document.getElementById("phone").value;
 let msg=document.getElementById("msg").value;
 
 let url=`https://wa.me/919755360286?text=Name:${name}%0APhone:${phone}%0AMessage:${msg}`;
-window.open(url,'_blank');
+window.open(url);
 }
 </script>
 
