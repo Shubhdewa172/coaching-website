@@ -11,15 +11,6 @@
 *{margin:0;padding:0;box-sizing:border-box;}
 body{font-family:'Poppins';background:#0f172a;color:white;}
 
-/* NAV */
-header{
-position:fixed;width:100%;top:0;
-padding:15px 40px;
-background:rgba(15,23,42,0.7);
-backdrop-filter:blur(10px);
-}
-header h2{color:#60a5fa;}
-
 /* HERO */
 .hero{
 height:100vh;
@@ -29,36 +20,55 @@ text-align:center;
 background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
 url('https://images.unsplash.com/photo-1588072432836-e10032774350');
 background-size:cover;
-color:white;
 }
 
+/* BUTTON */
 .btn{
 background:#3b82f6;
 padding:10px 20px;
 border-radius:20px;
-text-decoration:none;
 color:white;
+text-decoration:none;
 }
 
 /* SECTION */
-section{padding:70px 20px;text-align:center;}
+section{padding:60px 20px;text-align:center;}
 h2{color:#60a5fa;margin-bottom:20px;}
 
-/* CARDS */
+/* CARDS GRID */
 .cards{
-display:flex;flex-wrap:wrap;gap:20px;
+display:flex;
+flex-wrap:wrap;
 justify-content:center;
+gap:20px;
 }
+
+/* CARD */
 .card{
-width:260px;padding:20px;border-radius:15px;
+width:220px;
+padding:20px;
+border-radius:15px;
 background:rgba(255,255,255,0.05);
+transition:0.3s;
+}
+.card:hover{transform:translateY(-8px);}
+
+.card img{
+width:100px;
+height:100px;
+border-radius:50%;
+border:3px solid #60a5fa;
+margin-bottom:10px;
 }
 
 /* CONTACT */
 .contact{background:#1e293b;}
 input,textarea{
-width:90%;margin:10px;padding:10px;
-border-radius:10px;border:none;
+width:90%;
+margin:10px;
+padding:10px;
+border-radius:10px;
+border:none;
 }
 
 /* MAP */
@@ -70,10 +80,6 @@ footer{background:#020617;padding:15px;}
 
 <body>
 
-<header>
-<h2>Excellence Coaching</h2>
-</header>
-
 <!-- HERO -->
 <section class="hero">
 <h1>Excellence Research And Coaching Centre</h1>
@@ -81,31 +87,45 @@ footer{background:#020617;padding:15px;}
 <a href="#contact" class="btn">Join Now</a>
 </section>
 
-<!-- COURSES -->
+<!-- TOPPERS -->
 <section>
-<h2>Our Courses</h2>
-<div class="cards">
-<div class="card"><h3>Class 1–12</h3></div>
-<div class="card"><h3>CGPSC</h3></div>
-<div class="card"><h3>SSC/Banking</h3></div>
-<div class="card"><h3>Railway</h3></div>
-</div>
-</section>
+<h2>Our Toppers</h2>
 
-<!-- TOPPER -->
-<section>
-<h2>Our Topper</h2>
 <div class="cards">
 
 <div class="card">
-<img src="vidya.jpg" 
-style="width:120px;height:120px;border-radius:50%;border:3px solid #60a5fa;">
+<img src="pooja.jpg">
+<h3>Pooja Sinha</h3>
+<p>Class 12th</p>
+<h3 style="color:#60a5fa;">85%</h3>
+</div>
 
+<div class="card">
+<img src="ritvik.jpg">
+<h3>Ritvik Benz</h3>
+<p>Class 10th</p>
+<h3 style="color:#60a5fa;">85%</h3>
+</div>
+
+<div class="card">
+<img src="aakash.jpg">
+<h3>Aakash Sharma</h3>
+<p>Class 10th</p>
+<h3 style="color:#60a5fa;">87%</h3>
+</div>
+
+<div class="card">
+<img src="raghav.jpg">
+<h3>Raghav Singh</h3>
+<p>Class 10th</p>
+<h3 style="color:#60a5fa;">88%</h3>
+</div>
+
+<div class="card">
+<img src="vidya.jpg">
 <h3>Vidya Bhardwaj</h3>
-<p>Class 12th Topper</p>
-
-<h2 style="color:#60a5fa;">90%</h2>
-<p>CBSE Board Result</p>
+<p>Class 12th</p>
+<h3 style="color:#60a5fa;">90%</h3>
 </div>
 
 </div>
