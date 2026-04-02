@@ -24,24 +24,42 @@ z-index:1000;
 }
 header h2{color:#60a5fa;}
 
-/* HERO */
+/* HERO WITH IMAGE */
 .hero{
 height:100vh;
 display:flex;flex-direction:column;
 justify-content:center;align-items:center;
 text-align:center;
-background:radial-gradient(circle,#1e3c72,#020617);
+color:white;
+position:relative;
+
+background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+url('https://images.unsplash.com/photo-1588072432836-e10032774350');
+
+background-size:cover;
+background-position:center;
 }
 
-.hero h1{font-size:48px;}
+/* glow effect */
+.hero::before{
+content:"";
+position:absolute;
+width:500px;height:500px;
+background:rgba(59,130,246,0.3);
+filter:blur(120px);
+top:-100px;left:-100px;
+}
+
+.hero h1{font-size:48px;z-index:1;}
 .hero span{color:#60a5fa;}
-.hero p{margin:15px 0;color:#cbd5f5;}
+.hero p{margin:15px 0;color:#cbd5f5;z-index:1;}
 
 .btn{
 background:linear-gradient(135deg,#3b82f6,#60a5fa);
 padding:12px 25px;border-radius:30px;
 text-decoration:none;color:white;
 transition:0.3s;
+z-index:1;
 }
 .btn:hover{transform:scale(1.05);}
 
@@ -64,9 +82,7 @@ transition:0.3s;
 .card:hover{transform:translateY(-10px);}
 
 /* TESTIMONIAL */
-.slider{
-max-width:600px;margin:auto;
-}
+.slider{max-width:600px;margin:auto;}
 .slide{display:none;}
 .slide.active{display:block;}
 
@@ -112,7 +128,7 @@ footer{background:#020617;padding:15px;}
 <div class="cards">
 
 <div class="card"><h3>Class 1–12</h3><p>All Subjects</p></div>
-<div class="card"><h3>CGPSC/CGVYAPAM</h3><p>Full Prep</p></div>
+<div class="card"><h3>CGPSC</h3><p>Full Prep</p></div>
 <div class="card"><h3>SSC/Banking</h3><p>Complete Course</p></div>
 <div class="card"><h3>Railway</h3><p>RRB Exams</p></div>
 
@@ -144,17 +160,15 @@ footer{background:#020617;padding:15px;}
 
 <p>
 📍 <a href="https://maps.app.goo.gl/QrZvXis84WTvNySz5" target="_blank" style="color:#60a5fa;">
-View Exact Location on Google Maps
+View Exact Location
 </a>
 </p>
 
 </section>
 
-<!-- EXACT MAP -->
+<!-- MAP -->
 <section class="map">
-<iframe 
-src="https://www.google.com/maps?q=Excellence%20Research%20And%20Coaching%20Centre%20Naya%20Raipur&output=embed">
-</iframe>
+<iframe src="https://www.google.com/maps?q=Excellence%20Research%20And%20Coaching%20Centre%20Naya%20Raipur&output=embed"></iframe>
 </section>
 
 <footer>
